@@ -5,8 +5,8 @@
 # date              :20180807
 # version           :1.0
 # usage             :python encode.py -i ./train_example/val/host_val.fa -l 1000 -p host
-# required packages :numpy, theano, keras, scikit-learn, Biopython
-# conda create -n dvf python=3.6 numpy theano keras scikit-learn Biopython
+# required packages :numpy, pytensor, keras, scikit-learn, Biopython
+# conda create -n dvf python=3.6 numpy pytensor keras scikit-learn Biopython
 #==============================================================================
 
 import os, sys
