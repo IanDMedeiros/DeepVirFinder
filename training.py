@@ -5,13 +5,13 @@
 # date              :20180807
 # version           :1.0
 # usage             :python training.py -l 1000 -i ./train_example/tr/encode -j ./train_example/val/encode -o ./train_example/models -f 10 -n 1000 -d 1000 -e 50
-# required packages :numpy, theano, keras, scikit-learn, Biopython
-# conda create -n dvf python=3.6 numpy theano keras scikit-learn Biopython
+# required packages :numpy, pytensor, keras, scikit-learn, Biopython
+# conda create -n dvf python=3.6 numpy pytensor keras scikit-learn Biopython
 #==============================================================================
 
 #import multiprocessing
-#os.environ['THEANO_FLAGS'] = "floatX=float32,openmp=True" 
-#os.environ['THEANO_FLAGS'] = "mode=FAST_RUN,device=gpu0,floatX=float32" 
+#os.environ['PYTENSOR_FLAGS'] = "floatX=float32,openmp=True" 
+#os.environ['PYTENSOR_FLAGS'] = "mode=FAST_RUN,device=gpu0,floatX=float32" 
 #os.environ['OMP_NUM_THREADS'] = str(multiprocessing.cpu_count())
 import numpy as np
 import os
