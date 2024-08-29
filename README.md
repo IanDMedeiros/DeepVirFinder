@@ -25,16 +25,16 @@ The more flexible CNN model indeed outperforms the k-mer based model on viral se
 
 ## Dependencies
 
-DeepVirFinder requires Python 3.6 with the packages of numpy, theano, keras, scikit-learn, and Biopython.
+DeepVirFinder requires Python 3.6 with the packages of numpy, pytensor, keras, scikit-learn, and Biopython.
 We recommand the use [Miniconda](https://conda.io/miniconda.html) to install all dependencies. 
 After installing Miniconda, simply run (this may take about 5-10 minutes),
 
 
-    conda install python=3.6 numpy theano=1.0.3 keras=2.2.4 scikit-learn Biopython h5py
+    conda install python=3.6 numpy pytensor keras=2.2.4 scikit-learn Biopython h5py
     
 or create a virtual environment 
 
-    conda create --name dvf python=3.6 numpy theano=1.0.3 keras=2.2.4 scikit-learn Biopython h5py
+    conda create --name dvf python=3.6 numpy pytensor keras=2.2.4 scikit-learn Biopython h5py
     source activate dvf
 
 
