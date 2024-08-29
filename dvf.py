@@ -5,8 +5,8 @@
 # date              :20180807
 # version           :1.0
 # usage             :python dvf.py -i <path_to_input_fasta> -o <path_to_output_directory>
-# required packages :numpy, theano, keras 
-# conda create -n dvf python=3.6 numpy theano keras scikit-learn Biopython
+# required packages :numpy, pytensor, keras 
+# conda create -n dvf python=3.6 numpy pytensor keras scikit-learn Biopython
 #==============================================================================
 
 
@@ -50,15 +50,15 @@ core_num = options.core_num
 import h5py, multiprocessing
 import numpy as np
 
-import theano
-theano.config.gcc.cxxflags = "-Wno-c++11-narrowing"
+import pytensor
+pytensor.config.gcc__cxxflags = "-Wno-c++11-narrowing"
 
-os.environ['KERAS_BACKEND'] = 'theano'
+os.environ['KERAS_BACKEND'] = 'pytensor'
 import keras
 from keras.models import load_model
 #sys.setrecursionlimit(10000000)
-#os.environ['THEANO_FLAGS'] = "floatX=float32,openmp=True" 
-#os.environ['THEANO_FLAGS'] = "mode=FAST_RUN,device=gpu0,floatX=float32" 
+#os.environ['PYTENSOR_FLAGS'] = "floatX=float32,openmp=True" 
+#os.environ['PYTENSOR_FLAGS'] = "mode=FAST_RUN,device=gpu0,floatX=float32" 
 #os.environ['OMP_NUM_THREADS'] = str(multiprocessing.cpu_count())
 
 
