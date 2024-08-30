@@ -34,7 +34,7 @@ After installing Miniconda, simply run (this may take about 5-10 minutes),
     
 or create a virtual environment 
 
-    conda create --name dvf python=3.6 numpy pytensor keras=2.2.4 scikit-learn Biopython h5py
+    conda create --name dvf python=3.6 numpy pytensor keras=2.2.4 scikit-learn Biopython h5py=2.10.0
     source activate dvf
 
 
